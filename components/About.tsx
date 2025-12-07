@@ -71,8 +71,8 @@ export const About: React.FC<AboutProps> = ({ onBack }) => {
 
                     {/* Content */}
                     <div className="text-center space-y-2">
-                        <h2 className="text-3xl font-bold text-white">Dushyanth</h2>
-                        <p className="text-sm font-mono text-app-textMuted uppercase tracking-widest">Founder & CEO</p>
+                        <h2 className="text-3xl font-bold text-white">Dushyanth J P</h2>
+                        <p className="text-sm font-mono text-app-textMuted uppercase tracking-widest">Founder and Developer</p>
                     </div>
 
                     {/* LinkedIn Button */}

@@ -378,6 +378,12 @@ export class Parser {
     if (this.match(TokenType.STRING)) {
       return { kind: 'Literal', value: this.previous().value, raw: this.previous().value };
     }
+    if (this.match(TokenType.MEI)) {
+      return { kind: 'Literal', value: true, raw: 'Mei' };
+    }
+    if (this.match(TokenType.POI)) {
+      return { kind: 'Literal', value: false, raw: 'Poi' };
+    }
     if (this.match(TokenType.IDENTIFIER)) {
       return { kind: 'Identifier', symbol: this.previous().value };
     }

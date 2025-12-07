@@ -24,7 +24,9 @@ export const KEYWORDS: Record<string, TokenType> = {
 
   // Control
   'Nirthu': TokenType.NIRTHU,
-  'Adutha': TokenType.ADUTHA
+  'Adutha': TokenType.ADUTHA,
+  'Mei': TokenType.MEI,
+  'Poi': TokenType.POI
 };
 
 export const KEYWORDS_MAP: Record<string, TokenType> = {
@@ -48,6 +50,8 @@ export const KEYWORDS_MAP: Record<string, TokenType> = {
   'Idhu': TokenType.IDHU,
   'Nirthu': TokenType.NIRTHU,
   'Adutha': TokenType.ADUTHA,
+  'Mei': TokenType.MEI,
+  'Poi': TokenType.POI,
 };
 
 

@@ -496,6 +496,7 @@ export class Evaluator {
       case 'Literal': {
         const val = (node as any).value;
         if (val === null) return { type: 'null', value: null };
+        if (typeof val === 'boolean') return { type: 'boolean', value: val };
         if (typeof val === 'number') return { type: 'number', value: val };
         return { type: 'string', value: String(val) };
       }

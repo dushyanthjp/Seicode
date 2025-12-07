@@ -26,6 +26,10 @@ export enum TokenType {
   NIRTHU, // Break
   ADUTHA, // Continue
 
+  // Boolean Literals
+  MEI, // True
+  POI, // False
+
   // Operators
   SAMAM, // ==
   NOT_EQUAL, // !=
