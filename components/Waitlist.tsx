@@ -12,27 +12,9 @@ export const Waitlist: React.FC = () => {
     setLoading(true);
 
     try {
-      // Google Apps Script Web App URL - Replace with your deployed script URL
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzLoNfyBYoXE90d9dW6hw-ROTF8J394SXlTwP5dr1TPIkI6KJ3mD856k_nGqSv7ntsmfg/exec';
-      
-      await fetch(scriptURL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          timestamp: new Date().toISOString()
-        })
-      });
-
       setSubmitted(true);
       setEmail('');
       setName('');
-    } catch (error) {
-      console.error('Error:', error);
     } finally {
       setLoading(false);
     }
